@@ -12,7 +12,7 @@ attr_accessor :name #Macro for setter/getter of Artist.name
     @@all #Allows us to check all artist instances
   end
 
-  def add_song(song) #Add song to artist
+  def add_song(song) #Add song instance to artist
     song.artist = self #Assign artist instance to a song
     @songs << song #Add song to instance varaible song to keep track of all artist songs
   end
